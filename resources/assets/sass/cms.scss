@@ -1,0 +1,85 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.navbar{
+  margin: auto;
+}
+
+#leftAdminMenu{
+  float: left;
+  height:100vh;
+  position: fixed;
+  background-color: #262A34;
+  overflow-y: scroll;
+
+  ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    li{
+      list-style: none;
+    }
+
+    li:not(:last-of-type){
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .glyphicon{
+      font-size: 22px;
+      padding: 12px;
+      margin-right: 6px;
+      background-color: #2F323E;
+    }
+
+    a{
+      min-width: 400px;
+      max-height: 46px;
+      display: block;
+    }
+    a, a:visited, a li, a li .glyphicon{
+
+      text-decoration: none;
+      color: #697483;
+      transition: all 0.5s ease-in-out;
+    }
+    a:hover li, a:active, a:hover li .glyphicon{
+      background-color: rgba(0,0,0,0.1);
+      transition: all 0.1s ease-in;
+    }
+
+    a.active li, a.active li .glyphicon{
+      background-color: rgba(0,0,0,0.1);
+    }
+
+  }
+
+  ul#settings{
+    margin-top: 100px;
+    margin-bottom: 70px;
+  }
+
+}
+#leftAdminMenu::-webkit-scrollbar {
+  display: none;
+}
+
+#leftAdminMenu.expanded{
+  width: 15%;
+}
+#leftAdminMenu.compressed{
+  width: 46px;
+  overflow-x: hidden;
+}
+
+#adminContent{
+  float: right;
+  width: 85%;
+}
