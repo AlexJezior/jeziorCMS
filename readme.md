@@ -1,6 +1,7 @@
 
 
 ## JeziorCMS
+[![Build Status](https://travis-ci.com/AlexJezior/jeziorCMS.svg?branch=master)](https://travis-ci.com/AlexJezior/jeziorCMS)
 
 JeziorCMS is a project I have decided to publish on GitHub while I develop upon it. Anyone is welcome to use this code as they wish, with acknowledgement of all the other services included in this project. 
 
