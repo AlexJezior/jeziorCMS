@@ -9,8 +9,10 @@ services:
 php:
   - '7.3'
 
-before_script:
+before_install:
   - mysql -e 'CREATE DATABASE jezior_cms;'
+
+before_script:
   - cp .env.travis .env
   - composer self-update
   - composer install --no-interaction
