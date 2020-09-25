@@ -3,11 +3,14 @@ os:
 
 language: php
 
+services:
+  - mysql
+
 php:
   - '7.3'
 
 before_script:
-  - cp .env.example .env
+  - cp .env.travis .env
   - composer self-update
   - composer install --no-interaction
 
